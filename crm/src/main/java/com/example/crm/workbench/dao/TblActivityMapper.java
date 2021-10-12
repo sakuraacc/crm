@@ -65,4 +65,10 @@ public interface TblActivityMapper {
     int update(TblActivity activity);
 
     TblActivity detail(String id);
+
+    List<TblActivity> getActivityListByClueId(String clueId);
+
+    List<TblActivity> getActivityListByNameAndNotByclueId(Map<String, String> map);
+
+    List<TblActivity> getActivityListByName(String aname);
 }

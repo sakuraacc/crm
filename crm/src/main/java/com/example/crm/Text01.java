@@ -13,7 +13,6 @@ public class Text01 {
     @RequestMapping("text01.do")
     @ResponseBody
     public String text01(){
-        System.out.println(redisUtil.get("name"));
-        return redisUtil.get("name");
+    return "0";
     }
 }

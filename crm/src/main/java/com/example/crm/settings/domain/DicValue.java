@@ -1,6 +1,8 @@
 package com.example.crm.settings.domain;
 
-public class DicValue {
+import java.io.Serializable;
+
+public class DicValue implements Serializable{
    private String id;
    private String value;
    private String text ;

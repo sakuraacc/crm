@@ -101,4 +101,22 @@ public class ActivityServiceImple implements ActivityService {
         return count==1;
     }
 
+    @Override
+    public List<TblActivity> getActivityListByClueId(String clueId) {
+        List<TblActivity> aList = activityMapper.getActivityListByClueId(clueId);
+        return aList;
+    }
+
+    @Override
+    public List<TblActivity> getActivityListByNameAndNotByclueId(Map<String, String> map) {
+        List<TblActivity> aList = activityMapper.getActivityListByNameAndNotByclueId(map);
+        return aList;
+    }
+
+    @Override
+    public List<TblActivity> getActivityListByName(String aname) {
+        List<TblActivity> aList = activityMapper.getActivityListByName(aname);
+        return aList;
+    }
+
 }

@@ -51,21 +51,11 @@ public class text {
     public String d1(){
         return "workbench/clue/detail";
     }
-    @RequestMapping("/workbench/clue/convert")
-    public String s9(){
-        return "workbench/clue/convert";
-    }
-    @RequestMapping("/workbench/transaction/save")
-    public String s10(){
-        return "workbench/transaction/save";
-    }
     @RequestMapping("/workbench/transaction/edit")
     public String s11(){
         return "workbench/transaction/edit";
     }
-    @RequestMapping("/workbench/transaction/detail")
-    public String s12(){
-        return "workbench/transaction/detail";
-    }
+    @RequestMapping("/workbench/chart/transaction/index")
+    public String s13(){return "workbench/chart/transaction/index";}
 
 }
